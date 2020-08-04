@@ -13,6 +13,9 @@ namespace MyGenerics
     /// <typeparam name="T">the generic type passed</typeparam>
     internal class MyStack<T> : IEnumerable
     {
+        /// <summary>
+        /// Instantiating My collection base class
+        /// </summary>
         private readonly MyCollectionBase<T> _theStackList;
 
         /// <summary>
@@ -55,7 +58,6 @@ namespace MyGenerics
             T toReturn = _theStackList.First.Value;
             _theStackList.RemoveFirst();
 
-            //List.RemoveAt();
             return toReturn;
         }
 

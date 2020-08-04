@@ -233,12 +233,19 @@ namespace MyGenerics.Base
             AddAfter(after, new MyCollectionNode<T>(value));
         }
 
+        /// <summary>
+        /// The size of the list
+        /// </summary>
         public int Count
         {
             get;
             private set;
         }
 
+        /// <summary>
+        /// Adds an item at the top of the list
+        /// </summary>
+        /// <param name="item">The value to add</param>
         public void Add(T item)
         {
             AddFirst(item);
@@ -259,6 +266,58 @@ namespace MyGenerics.Base
                     return current;
                 }
 
+                current = current.Next;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Inserts a value at a particular index in the list
+        /// </summary>
+        /// <param name="value">The value to insert</param>
+        /// <param name="index">The index you intend the value to</param>
+        /// <returns></returns>
+        public bool Insert(T value, int index)
+        {
+            if (Count != 0)
+            {
+                MyCollectionNode<T> found = FindNode(index);
+                if (found != null)
+                {
+                    AddBefore(found, value);
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("index not found");
+                    return false;
+                }
+            }
+            else
+            {
+                Console.WriteLine("index not found");
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Searches for a node at a particular given index
+        /// </summary>
+        /// <param name="index">the given index</param>
+        /// <returns>The returned node</returns>
+        public MyCollectionNode<T> FindNode(int index)
+        {
+            int aCount = 0;
+            MyCollectionNode<T> current = First;
+            while (current != null)
+            {
+                if (aCount == index)
+                {
+                    return current;
+                }
+
+                aCount++;
                 current = current.Next;
             }
 
@@ -317,6 +376,11 @@ namespace MyGenerics.Base
             return Find(item) != null;
         }
 
+        /// <summary>
+        /// Copies the items in the list into another array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="arrayIndex"></param>
         public void CopyTo(T[] array, int arrayIndex)
         {
             MyCollectionNode<T> current = First;
@@ -449,6 +513,9 @@ namespace MyGenerics.Base
             Count = 0;
         }
 
+        /// <summary>
+        /// sets the capacity of the list to the real size of the list
+        /// </summary>
         public void TrimExcess()
         {
             this._capacity = Count;
@@ -475,6 +542,24 @@ namespace MyGenerics.Base
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Checks and returns true if list is empty
+        /// </summary>
+        /// <returns>the returned boolean value</returns>
+        public bool IsEmpty() => (Count < 1) ? true : false;
+
+        public T Search(T value)
+        {
+            if (Contains(value))
+            {
+                return value;
+            }
+            else
+            {
+                return value;
+            }
         }
 
         /// <summary>

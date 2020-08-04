@@ -15,30 +15,43 @@ namespace MyGenerics
         private static void Main(string[] args)
 
         {
-            LinkedList<int> wer = new LinkedList<int>();
-            LinkedListNode<int> iu = new LinkedListNode<int>(6);
+            Console.WriteLine("=================================================================================================");
+            Console.WriteLine("                                             WELCOME");
+            Console.WriteLine("=================================================================================================");
+            Console.WriteLine();
 
-            MyLinkedList<int> mine = new MyLinkedList<int>();
+            bool running = true;
 
-            mine.AddLast(5);
-            mine.AddLast(6);
-            mine.AddLast(7);
-            mine.AddLast(8);
-            mine.AddLast(9);
-
-            mine.AddFirst(10);
-
-            mine.Remove(8);
-            mine.AddLast(10);
-            mine.RemoveLast();
-            mine.RemoveFirst();
-
-            foreach (var item in mine)
+            while (running)
             {
-                Console.WriteLine(item);
-            }
+                Console.WriteLine("ENTER 1 : TO INITIALIZE A QUEUE");
+                Console.WriteLine("ENTER 2 : TO INITIALIZE A STACK");
+                Console.WriteLine("ENTER 3 : TO INITIALIZE A LINKED-LIST");
+                Console.WriteLine("ENTER 4 : TO EXIT");
+                Console.WriteLine();
 
-            Console.WriteLine(mine.IndexOf(10));
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        QueueOpearations.Start();
+                        break;
+
+                    case "2":
+                        StackOperations.Start();
+                        break;
+
+                    case "3":
+                        LinkedListOperations.Start();
+                        break;
+
+                    case "4":
+                        Console.WriteLine("Good bye!");
+                        running = false;
+                        break;
+                }
+            }
         }
     }
 }

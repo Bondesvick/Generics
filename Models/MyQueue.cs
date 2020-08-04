@@ -9,6 +9,9 @@ namespace MyGenerics
 {
     internal class MyQueue<T> : IEnumerable<T>
     {
+        /// <summary>
+        /// Instantiating My collection base class
+        /// </summary>
         private readonly MyCollectionBase<T> _theQueueList;
 
         /// <summary>
