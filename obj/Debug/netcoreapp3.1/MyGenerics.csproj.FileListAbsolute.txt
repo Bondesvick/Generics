@@ -1,0 +1,13 @@
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.exe
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.deps.json
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.runtimeconfig.json
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.runtimeconfig.dev.json
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.dll
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\bin\Debug\netcoreapp3.1\MyGenerics.pdb
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.csprojAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.AssemblyInfo.cs
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.dll
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.pdb
+C:\Users\hp\Documents\Visual Studio 2019\Projects\Generics\obj\Debug\netcoreapp3.1\MyGenerics.genruntimeconfig.cache
