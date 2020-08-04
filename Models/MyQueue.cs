@@ -1,11 +1,10 @@
-﻿using System;
+﻿using MyGenerics.Base;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using MyGenerics.Base;
 
-namespace MyGenerics
+namespace MyGenerics.Models
 {
     internal class MyQueue<T> : IEnumerable<T>
     {

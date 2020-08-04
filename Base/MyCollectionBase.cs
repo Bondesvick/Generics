@@ -1,30 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace MyGenerics.Base
 {
     internal class MyCollectionBase<T> : ICollection<T>
     {
+        /// <summary>
+        /// The first item
+        /// </summary>
         public MyCollectionNode<T> First
         {
             get;
             private set;
         }
 
+        /// <summary>
+        /// The last item
+        /// </summary>
         public MyCollectionNode<T> Last
         {
             get;
             private set;
         }
 
+        /// <summary>
+        /// Lisy capacity
+        /// </summary>
         private int _capacity = 4;
 
+        /// <summary>
+        /// The constructor
+        /// </summary>
         public MyCollectionBase()
         {
         }
 
+        /// <summary>
+        /// The constructor overload with a capacity parameter
+        /// </summary>
+        /// <param name="capacity"></param>
         public MyCollectionBase(int capacity)
         {
             _capacity = capacity;
@@ -550,7 +565,12 @@ namespace MyGenerics.Base
         /// <returns>the returned boolean value</returns>
         public bool IsEmpty() => (Count < 1) ? true : false;
 
-        public T Search(T value)
+        /// <summary>
+        /// Searches for an item in the list and returns
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public object Search(T value)
         {
             if (Contains(value))
             {
@@ -558,7 +578,7 @@ namespace MyGenerics.Base
             }
             else
             {
-                return value;
+                return null;
             }
         }
 

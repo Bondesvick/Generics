@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Collections;
-using MyGenerics.Base;
+﻿using MyGenerics.Base;
 
-namespace MyGenerics
+namespace MyGenerics.Models
 {
     /// <summary>
     /// A class that replicates the functionality of a LinkedList

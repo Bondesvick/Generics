@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MyGenerics.Models;
+using System;
 
-namespace MyGenerics
+namespace MyGenerics.Operations
 {
     internal class StackOperations
     {

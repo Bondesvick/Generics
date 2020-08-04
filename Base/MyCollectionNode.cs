@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MyGenerics.Base
+﻿namespace MyGenerics.Base
 {
     internal class MyCollectionNode<T>
     {

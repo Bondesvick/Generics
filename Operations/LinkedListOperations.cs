@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MyGenerics.Models;
+using System;
 
-namespace MyGenerics
+namespace MyGenerics.Operations
 {
     internal class LinkedListOperations
     {
         public static void Start()
         {
             MyLinkedList<string> mine = new MyLinkedList<string>();
-            Console.WriteLine("A Stack has been initialized");
+            Console.WriteLine("A LinkedList has been initialized");
             Console.WriteLine();
             bool running = true;
             //mine.
@@ -22,7 +21,8 @@ namespace MyGenerics
                 Console.WriteLine("Enter 5 : to show the size of the LinkedList");
                 Console.WriteLine("Enter 6 : to check if the List is empty");
                 Console.WriteLine("Enter 7 : to check the index of a value");
-                Console.WriteLine("Enter 8 : to Exit the LinkedList");
+                Console.WriteLine("Enter 8 : to search for an item in the LinkedList");
+                Console.WriteLine("Enter 9 : to Exit the LinkedList");
                 Console.WriteLine();
 
                 string answer = Console.ReadLine();
@@ -92,6 +92,16 @@ namespace MyGenerics
                         break;
 
                     case "8":
+                        Console.WriteLine("Enter the item you want to search");
+                        string anItem = Console.ReadLine();
+                        if (mine.Search(anItem) != null)
+                            Console.WriteLine($"{anItem} was found in the List");
+                        else
+                            Console.WriteLine($"{anItem} was not found");
+                        Console.WriteLine();
+                        break;
+
+                    case "9":
                         running = false;
                         break;
                 }

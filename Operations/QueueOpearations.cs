@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading;
+﻿using MyGenerics.Models;
+using System;
 
-namespace MyGenerics
+namespace MyGenerics.Operations
 {
-    internal class QueueOpearations
+    internal class QueueOperations
     {
         public static void Start()
         {
