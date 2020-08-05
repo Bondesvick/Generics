@@ -40,7 +40,7 @@ namespace MyGenerics.Operations
                     case "2":
                         Console.WriteLine("Enter the value you want to remove");
                         string item = Console.ReadLine();
-                        if (mine.Contains(item))
+                        if (mine.Remove(item))
                             Console.WriteLine($"{item} was removed from the Stack");
                         else
                             Console.WriteLine("the value you entered is not in the list ");
