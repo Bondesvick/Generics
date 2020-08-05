@@ -21,10 +21,10 @@ namespace MyGenerics
 
             while (running)
             {
-                Console.WriteLine("ENTER 1 : TO INITIALIZE A QUEUE");
-                Console.WriteLine("ENTER 2 : TO INITIALIZE A STACK");
-                Console.WriteLine("ENTER 3 : TO INITIALIZE A LINKED-LIST");
-                Console.WriteLine("ENTER 4 : TO EXIT");
+                Console.WriteLine("                             ENTER 1 : TO INITIALIZE A QUEUE");
+                Console.WriteLine("                             ENTER 2 : TO INITIALIZE A STACK");
+                Console.WriteLine("                             ENTER 3 : TO INITIALIZE A LINKED-LIST");
+                Console.WriteLine("                             ENTER 4 : TO EXIT");
                 Console.WriteLine();
 
                 string input = Console.ReadLine();
